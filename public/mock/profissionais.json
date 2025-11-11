@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "nome": "Carlos Oliveira",
+    "nome": "Nélio Makoto",
     "categoria": "Encanador",
     "descricao": "Encanador com 15 anos de experiência",
-    "foto": "/placeholder.svg?height=200&width=200",
+    "foto": "/download.png",
     "preco_min": 80,
     "preco_max": 200,
     "latitude": -23.5505,
     "longitude": -46.6333,
     "nota": 4.8,
     "distancia_km": 1.2,
-    "whatsapp": "11987654321"
+    "whatsapp": "5524993039322"
   },
   {
     "id": 2,

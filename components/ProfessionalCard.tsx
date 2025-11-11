@@ -64,7 +64,7 @@ export default function ProfessionalCard({ profissional }: ProfessionalCardProps
 
         <div className={styles.actions}>
           <a
-            href={`https://wa.me/55${profissional.whatsapp.replace(/\D/g, "")}`}
+            href={`https://wa.me/55${profissional.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent("Olá, tenho interesse no seu serviço!")}`}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.whatsappButton}
