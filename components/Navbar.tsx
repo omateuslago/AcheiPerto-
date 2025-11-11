@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-              <img src="/AcheiPerto.png" alt="Logo Achei Perto" className={styles.logoImage} />
+          🏠 Achei Perto
         </Link>
 
         <button className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Abrir menu">

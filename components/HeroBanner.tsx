@@ -3,15 +3,20 @@
 import type React from "react"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import styles from "./HeroBanner.module.css"
 
 export default function HeroBanner() {
   const [searchQuery, setSearchQuery] = useState("")
   const [location, setLocation] = useState("")
+  const router = useRouter()
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Buscando:", searchQuery, "em", location)
+    const params = new URLSearchParams()
+    if (searchQuery) params.append("q", searchQuery)
+    if (location) params.append("local", location)
+    router.push(`/buscar?${params.toString()}`)
   }
 
   return (

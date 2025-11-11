@@ -8,13 +8,6 @@
   transition: var(--transition-smooth);
 }
 
-.logoImage {
-  width: 250px; /* ajuste conforme o tamanho da logo */
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.2s ease-in-out;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;

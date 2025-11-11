@@ -1,0 +1,92 @@
+.buscarPage {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  /* adicionando padding-top para compensar a navbar fixa */
+  padding-top: 110px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.resultsArea {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.pageButton:hover:not(:disabled) {
+  border-color: #00b359;
+  color: #00b359;
+}
+
+.pageButton.active {
+  background-color: #00b359;
+  color: white;
+  border-color: #00b359;
+}
+
+.pageButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mapContainer {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resultsArea {
+    padding: 16px;
+  }
+}

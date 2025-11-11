@@ -1,0 +1,45 @@
+.sortControl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.select:hover {
+  border-color: #00b359;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #00b359;
+  box-shadow: 0 0 0 3px rgba(0, 179, 89, 0.1);
+}
+
+@media (max-width: 480px) {
+  .sortControl {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .select {
+    width: 100%;
+  }
+}

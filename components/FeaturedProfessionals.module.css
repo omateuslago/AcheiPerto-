@@ -92,7 +92,7 @@
 }
 
 .whatsappBtn:hover {
-  background-color: #75d833;
+  background-color: #1fa85d;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }

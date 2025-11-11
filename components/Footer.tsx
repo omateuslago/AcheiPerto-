@@ -6,11 +6,11 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.footerSection}>
-            <div className={styles.logoContainer}>
-            <img src="/AcheiPerto.png" alt="Logo Achei Perto" className={styles.logo} />
-            </div>
-            <p>Conectando clientes e profissionais verificados na sua região. Contato direto, sem intermediários,
-              atendimento rápido.</p>
+            <h3>🏠 Achei Perto</h3>
+            <p>
+              Conectando clientes e profissionais verificados na sua região. Contato direto, sem intermediários,
+              atendimento rápido.
+            </p>
             <div className={styles.socialLinks}>
               <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                 💬

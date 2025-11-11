@@ -1,3 +1,6 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import styles from "./ServiceCategories.module.css"
 
 const categories = [
@@ -10,6 +13,12 @@ const categories = [
 ]
 
 export default function ServiceCategories() {
+  const router = useRouter()
+
+  const handleCategoryClick = (categoryName: string) => {
+    router.push(`/buscar?categoria=${encodeURIComponent(categoryName)}`)
+  }
+
   return (
     <section className={styles.categories} id="categorias">
       <div className={styles.container}>
@@ -18,7 +27,12 @@ export default function ServiceCategories() {
 
         <div className={styles.grid}>
           {categories.map((category) => (
-            <div key={category.id} className={styles.card}>
+            <div
+              key={category.id}
+              className={styles.card}
+              onClick={() => handleCategoryClick(category.name)}
+              style={{ cursor: "pointer" }}
+            >
               <div className={styles.icon}>{category.icon}</div>
               <h3>{category.name}</h3>
               <p>{category.description}</p>
