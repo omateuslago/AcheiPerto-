@@ -6,7 +6,7 @@ import styles from "./ServiceCategories.module.css"
 const categories = [
   { id: 1, icon: "⚡", name: "Elétrica", description: "Instalação e reparos elétricos" },
   { id: 2, icon: "🚰", name: "Encanamento", description: "Serviços de encanamento em geral" },
-  { id: 3, icon: "🎨", name: "Pintura", description: "Pintura residencial e comercial" },
+  { id: 3, icon: "🐾", name: "Pets", description: "Cuidados e serviços para animais de estimação" },
   { id: 4, icon: "🧹", name: "Limpeza", description: "Limpeza profissional de ambientes" },
   { id: 5, icon: "📦", name: "Montagem", description: "Montagem de móveis e estruturas" },
   { id: 6, icon: "💻", name: "Informática", description: "Suporte técnico e reparo" },

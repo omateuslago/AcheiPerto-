@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import styles from "./ProfessionalCard.module.css"
 
 interface Professional {
@@ -64,7 +65,7 @@ export default function ProfessionalCard({ profissional }: ProfessionalCardProps
 
         <div className={styles.actions}>
           <a
-            href={`https://wa.me/55${profissional.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent("Olá, tenho interesse no seu serviço!")}`}
+            href={`https://wa.me/55${profissional.whatsapp.replace(/\D/g, "")}`}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.whatsappButton}
@@ -72,9 +73,9 @@ export default function ProfessionalCard({ profissional }: ProfessionalCardProps
           >
             💬 WhatsApp
           </a>
-          <button className={styles.profileButton} aria-label={`Ver perfil de ${profissional.nome}`}>
+          <Link href={`/perfil/${profissional.id}`} className={styles.profileButton}>
             Ver perfil
-          </button>
+          </Link>
         </div>
       </div>
     </article>

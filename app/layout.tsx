@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Achei Perto — Encontre profissionais perto de você",
+  title: "AcheiPerto — Entrar / Cadastrar",
   description:
     "Conecte com profissionais verificados, perto de sua localização. Contato direto, atendimento rápido e sem intermediários.",
   generator: "v0.app",

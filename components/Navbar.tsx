@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import styles from "./Navbar.module.css"
 
 export default function Navbar() {
@@ -11,7 +12,14 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          🏠 Achei Perto
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AcheiPerto-g354rkD9KhhdzSDRCnv2ndVkc6D2Jv.png"
+            alt="AcheiPerto - Encontre profissionais perto de você"
+            width={180}
+            height={50}
+            priority
+            style={{ height: "auto" }}
+          />
         </Link>
 
         <button className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Abrir menu">
@@ -19,24 +27,24 @@ export default function Navbar() {
         </button>
 
         <div className={`${styles.navLinks} ${isMenuOpen ? styles.active : ""}`}>
-          <a href="#inicio" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/" onClick={() => setIsMenuOpen(false)}>
             Início
-          </a>
-          <a href="#categorias" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/#categorias" onClick={() => setIsMenuOpen(false)}>
             Serviços
-          </a>
-          <a href="#profissionais" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/#profissionais" onClick={() => setIsMenuOpen(false)}>
             Profissionais
-          </a>
-          <a href="#depoimentos" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/#depoimentos" onClick={() => setIsMenuOpen(false)}>
             Depoimentos
-          </a>
-          <a href="#login" className={styles.login} onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/entrar" className={styles.login} onClick={() => setIsMenuOpen(false)}>
             Entrar
-          </a>
-          <a href="#cadastro" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/cadastrar" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>
             Cadastrar
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

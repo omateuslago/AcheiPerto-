@@ -1,0 +1,58 @@
+[
+  {
+    "profissionalId": 1,
+    "cliente": "João Silva",
+    "nota": 5,
+    "comentario": "Excelente serviço! Resolveu meu problema rapidamente e com muita educação.",
+    "data": "2025-10-01"
+  },
+  {
+    "profissionalId": 1,
+    "cliente": "Ana Costa",
+    "nota": 4,
+    "comentario": "Bom profissional, só achei o preço um pouco acima da média.",
+    "data": "2025-09-28"
+  },
+  {
+    "profissionalId": 2,
+    "cliente": "Pedro Almeida",
+    "nota": 5,
+    "comentario": "Serviço impecável, recomendo muito!",
+    "data": "2025-09-15"
+  },
+  {
+    "profissionalId": 2,
+    "cliente": "Mariana Ferreira",
+    "nota": 5,
+    "comentario": "Profissional muito atenciosa, trabalho bem feito e pontual.",
+    "data": "2025-09-10"
+  },
+  {
+    "profissionalId": 3,
+    "cliente": "Carlos Mendes",
+    "nota": 4,
+    "comentario": "Ótima pintura, mas demorou um pouco mais que o previsto.",
+    "data": "2025-09-05"
+  },
+  {
+    "profissionalId": 4,
+    "cliente": "Lucia Santos",
+    "nota": 5,
+    "comentario": "Limpeza perfeita, voltaria a contratar com certeza!",
+    "data": "2025-08-30"
+  },
+  {
+    "profissionalId": 5,
+    "cliente": "Roberto Lima",
+    "nota": 5,
+    "comentario": "Técnico muito competente, resolveu tudo rapidinho.",
+    "data": "2025-08-25"
+  },
+  {
+    "profissionalId": 6,
+    "cliente": "Beatriz Oliveira",
+    "nota": 4,
+    "comentario": "Ótimo atendimento, cabelo ficou lindo!",
+    "data": "2025-08-20"
+  }
+]

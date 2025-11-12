@@ -37,10 +37,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --color-primary: #00b359;
-  --color-primary-dark: #00933e;
-  --color-secondary: #0099cc;
-  --color-secondary-dark: #0076a3;
+  /* Atualizadas cores para combinar com logo AcheiPerto */
+  --color-primary: #7cc941;
+  --color-primary-dark: #6ab02e;
+  --color-secondary: #2b7fd9;
+  --color-secondary-dark: #1e5aa4;
   --color-white: #ffffff;
   --color-light-gray: #f4f4f4;
   --color-medium-gray: #757575;
