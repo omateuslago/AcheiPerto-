@@ -29,7 +29,7 @@ export default function FiltersPanel({
 
   useEffect(() => {
     const loadCategories = async () => {
-      const response = await fetch("/mock/categorias.json")
+      const response = await fetch("/api/categorias")
       const data = await response.json()
       setCategories(data)
     }

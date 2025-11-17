@@ -11,6 +11,7 @@ import ResultsList from "@/components/ResultsList"
 import MapToggle from "@/components/MapToggle"
 import SortControl from "@/components/SortControl"
 import NoResults from "@/components/NoResults"
+import DynamicMapView from "@/components/GoogleMapsLoader"
 import styles from "./buscar.module.css"
 
 export default function BuscarPage() {
@@ -29,7 +30,7 @@ export default function BuscarPage() {
   // Carregar dados ao montar componente
   React.useEffect(() => {
     const loadProfissionais = async () => {
-      const response = await fetch("/mock/profissionais.json")
+      const response = await fetch("/api/profissionais")
       const data = await response.json()
       setProfissionais(data)
     }
@@ -167,20 +168,7 @@ export default function BuscarPage() {
                   )}
                 </>
               ) : (
-                <div className={styles.mapContainer}>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9754451357826!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-                    width="100%"
-                    height="500"
-                    style={{ border: 0, borderRadius: "12px" }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                  <p style={{ marginTop: "16px", textAlign: "center", color: "#757575" }}>
-                    {filteredProfissionais.length} profissionais encontrados próximos a você
-                  </p>
-                </div>
+                <DynamicMapView profissionais={filteredProfissionais} />
               )}
             </div>
           </div>
