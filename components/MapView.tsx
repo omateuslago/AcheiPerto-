@@ -31,10 +31,10 @@ const greenIcon = L.icon({
 })
 
 export default function MapView({ profissionais }: MapViewProps) {
-  // Centro padrão (São Paulo)
+  // Centro padrão (Indaiatuba, SP)
   const center: [number, number] = profissionais.length > 0
     ? [profissionais[0].latitude, profissionais[0].longitude]
-    : [-23.5505, -46.6333]
+    : [-23.0902, -47.2178]
 
   return (
     <div className={styles.mapViewContainer}>
